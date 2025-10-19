@@ -1,5 +1,6 @@
+import 'package:cinema/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'config/app_routes.dart';
+import 'splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cinema App',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.splash,
-      routes: AppRoutes.routes,
+      title: 'Laravel Flutter Auth',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const SplashScreen(),
     );
   }
 }
